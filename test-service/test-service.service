@@ -1,0 +1,10 @@
+[Unit]
+Description=Test Service
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/nodeapp
+ExecStart=/usr/bin/node index.js
+
+[Install]
+WantedBy=default.target
